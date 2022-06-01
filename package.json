@@ -1,11 +1,11 @@
 {
   "name": "github-api-consumer-cli",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "CLI consumer to Github API",
   "main": "lib/index.ts",
   "bin": {
-    "github-consumer": "./lib/index.js"
-},
+    "github-consumer": "./dist/index.js"
+  },
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix --ext .ts,.js .",
@@ -16,7 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/iagxferreira/github-api-consumer-cli.git"
   },
-  "keywords": ["cli", "github", "nodejs"],
+  "keywords": [
+    "cli",
+    "github",
+    "nodejs"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
