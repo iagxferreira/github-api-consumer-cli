@@ -13,6 +13,8 @@
   "plugins": ["@typescript-eslint", "jest"],
   "rules": {
     "max-len": ["error", 80],
-    "indent": ["error", 2]
+    "indent": ["error", 2],
+    "import/no-unresolved": "off",
+    "import/extensions": "off"
   }
 }
