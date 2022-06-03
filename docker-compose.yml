@@ -7,20 +7,4 @@ services:
         ports:
             - '15432:5432'
         volumes:
-            - ./postgres:/var/lib/postgresql/data
-        networks:
-            - postgres-network
-    pgadmin:
-        image: dpage/pgadmin4
-        environment:
-            PGADMIN_DEFAULT_EMAIL: 'admin@email.com'
-            PGADMIN_DEFAULT_PASSWORD: 'postgres@2022'
-        ports:
-            - '16543:80'
-        depends_on:
-            - postgres
-        networks:
-            - postgres-network
-networks:
-    postgres-compose-network:
-        driver: bridge
+            - ~/tmp/postgres:/var/lib/postgresql/data
