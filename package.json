@@ -4,12 +4,12 @@
   "description": "CLI consumer to Github API",
   "main": "lib/index.ts",
   "bin": {
-    "github-consumer": "dist/index.js"
+    "github-consumer": "bin/github-consumer"
   },
   "scripts": {
     "test": "jest",
     "lint": "eslint --fix --ext .ts,.js .",
-    "build": "tsc",
+    "build": "tsc --build",
     "prepare": "husky install"
   },
   "repository": {

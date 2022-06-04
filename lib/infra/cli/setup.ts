@@ -9,7 +9,7 @@ export const init = (commander: Command) =>
     .description(
       "Consume your user infos from Github API and cache it into a database"
     )
-    .version("0.2.0");
+    .version("1.0.0");
 
 export const handleExecution =
   async (cb: any, program: Command, args?: any) => {
@@ -25,7 +25,7 @@ export const handleExecution =
 
 export const loadCommands = (commander: Command) => {
   commander
-    .command("list-all")
+    .command("list-all-users")
     .description("list all cached users")
     .action(async () => {
       await handleExecution(listAllUsers, commander)
