@@ -1,7 +1,7 @@
-import { runCli } from "./cli";
+import cli from "./infra/cli";
 
 const main = async () => {
-  await runCli();
+  await cli();
 };
 
 main();
